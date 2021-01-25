@@ -9,9 +9,9 @@ import UIKit
 
 @objc(BAPlanBenefitTableViewCell)
 public final class PlanBenefitTableViewCell: UITableViewCell {
-    
+
     static let reuseIdentifier = String(describing: PlanBenefitTableViewCell.self)
-    
+
     @IBOutlet private weak var benefitLable: UILabel!
 
     func configure(with benefit: String) {

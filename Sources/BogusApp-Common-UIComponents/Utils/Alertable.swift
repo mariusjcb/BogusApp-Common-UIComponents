@@ -13,7 +13,7 @@ public extension Alertable where Self: UIViewController {
     func showAlert(title: String = "",
                    message: String,
                    preferredStyle: UIAlertController.Style = .alert,
-                   customActions: [String: (UIAlertAction.Style, (UIAlertAction) -> ())?]? = nil,
+                   customActions: [String: (UIAlertAction.Style, (UIAlertAction) -> Void)?]? = nil,
                    completion: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         if let actions = customActions {
@@ -30,7 +30,7 @@ public extension Alertable where Self: UINavigationController {
     func showAlert(title: String = "",
                    message: String,
                    preferredStyle: UIAlertController.Style = .alert,
-                   customActions: [String: (UIAlertAction.Style, (UIAlertAction) -> ())?]? = nil,
+                   customActions: [String: (UIAlertAction.Style, (UIAlertAction) -> Void)?]? = nil,
                    completion: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         if let actions = customActions {

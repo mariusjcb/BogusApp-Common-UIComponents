@@ -20,7 +20,11 @@ let package = Package(
         .package(name: "BogusApp-Features-TargetsList", url: "../../Features/BogusApp-Features-TargetsList", .branch("master")),
         .package(name: "BogusApp-Features-ChannelsList", url: "../../Features/BogusApp-Features-ChannelsList", .branch("master")),
         .package(name: "BogusApp-Features-PlansList", url: "../../Features/BogusApp-Features-PlansList", .branch("master")),
-        .package(name: "BogusApp-Features-CampaignReview", url: "../../Features/BogusApp-Features-CampaignReview", .branch("master"))
+        .package(name: "BogusApp-Features-CampaignReview", url: "../../Features/BogusApp-Features-CampaignReview", .branch("master")),
+        
+        // SwiftLint & Komondor
+        .package(url: "https://github.com/Realm/SwiftLint", from: "0.28.1"),
+        .package(url: "https://github.com/orta/Komondor", from: "1.0.6"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -48,3 +52,16 @@ let package = Package(
             dependencies: ["BogusApp-Common-UIComponents"]),
     ]
 )
+
+#if canImport(PackageConfig)
+    import PackageConfig
+
+    let config = PackageConfiguration([
+        "komondor": [
+            "pre-commit": [
+                "swift run swiftlint autocorrect --path Sources/",
+                "git add .",
+            ],
+        ],
+    ]).write()
+#endif

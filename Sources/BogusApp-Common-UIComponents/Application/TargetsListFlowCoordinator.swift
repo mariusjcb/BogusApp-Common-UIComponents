@@ -26,17 +26,17 @@ public protocol TargetsListFlowCoordinatorDependencies {
 }
 
 public final class TargetsListFlowCoordinator: NSObject {
-    
+
     public private(set) weak var navigationController: UINavigationController?
     private let dependencies: TargetsListFlowCoordinatorDependencies
-    
+
     private weak var targetsListController: TargetsListViewController?
-    
+
     init(navigationController: UINavigationController, dependencies: TargetsListFlowCoordinatorDependencies) {
         self.navigationController = navigationController
         self.dependencies = dependencies
     }
-    
+
     public func start() {
         let actions = TargetsListViewModelActions(showChannelsForSelectedTarget: showChannelsForSelectedTarget)
         let vc = dependencies.makeTargetsListViewController(actions: actions)
@@ -50,7 +50,7 @@ public final class TargetsListFlowCoordinator: NSObject {
         let vc = dependencies.makeChannelsListViewController(for: targets, actions: actions)
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     private func showPlansSelector(_ channel: Channel, _ plans: [Plan], _ didSelect: @escaping (Int) -> Void) {
         let vc = dependencies.makePlansListViewController(for: channel, plans: plans, didSelect: didSelect)
         vc.viewModel.didSelect = { index in
@@ -59,13 +59,13 @@ public final class TargetsListFlowCoordinator: NSObject {
         }
         navigationController?.present(vc, animated: true)
     }
-    
+
     private func showCampaignReview(_ targets: [TargetSpecific], selectedPlans: [(Channel, Int)]) {
         let actions = CampaignReviewViewModelActions(sendEmail: sendEmail)
         let vc = dependencies.makeCampaignReviewViewController(for: targets, selectedPlans: selectedPlans, actions: actions)
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     public func sendEmail(_ toEmail: String, _ message: String) {
         #if !os(tvOS)
         composeMail(to: toEmail, message: message)
@@ -76,7 +76,7 @@ public final class TargetsListFlowCoordinator: NSObject {
                                         preferredStyle: .alert)
         #endif
     }
-    
+
     #if !os(tvOS)
     private func composeMail(to: String, message: String) {
         DispatchQueue.main.async {
@@ -91,7 +91,7 @@ public final class TargetsListFlowCoordinator: NSObject {
             mail.mailComposeDelegate = delegate
             mail.setToRecipients([to])
             mail.setMessageBody(message, isHTML: false)
-            
+
             self.navigationController?.present(mail, animated: true)
         }
     }

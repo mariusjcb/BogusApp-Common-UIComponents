@@ -9,11 +9,11 @@ import UIKit
 
 public class CommonUIComponentsResourceBundles {
     public static let shared = CommonUIComponentsResourceBundles()
-    
+
     fileprivate var storyboardsBundle: Bundle?
-    
+
     private init() { }
-    
+
     public func setStoryboardsBundle(_ bundle: Bundle?) {
         self.storyboardsBundle = bundle
     }
@@ -29,7 +29,7 @@ public extension StoryboardInstantiable where Self: UIViewController {
     static var defaultFileName: String {
         return NSStringFromClass(Self.self).components(separatedBy: ".").last!
     }
-    
+
     static func instantiateViewController() -> Self {
         let fileName = defaultFileName
         let bundle = CommonUIComponentsResourceBundles.shared.storyboardsBundle

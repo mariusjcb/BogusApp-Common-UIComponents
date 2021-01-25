@@ -1,0 +1,169 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BogusApp-Common-Models",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Common/BogusApp-Common-Models",
+        "state": {
+          "branch": "master",
+          "revision": "67be60e60afdd22c514457c3b3fd8f63706a95e2",
+          "version": null
+        }
+      },
+      {
+        "package": "BogusApp-Common-Networking",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Common/BogusApp-Common-Networking",
+        "state": {
+          "branch": "master",
+          "revision": "10949aa82f8a2f9f570f9ecca91ab5a2d7571df5",
+          "version": null
+        }
+      },
+      {
+        "package": "BogusApp-Common-Utils",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Common/BogusApp-Common-Utils",
+        "state": {
+          "branch": "master",
+          "revision": "bde15f3cb4301f657b20eb2b33f6f3637b3863bb",
+          "version": null
+        }
+      },
+      {
+        "package": "BogusApp-Features-CampaignReview",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Features/BogusApp-Features-CampaignReview",
+        "state": {
+          "branch": "master",
+          "revision": "179faabb7831300982f0fb0a3ad8a184bf042e8e",
+          "version": null
+        }
+      },
+      {
+        "package": "BogusApp-Features-ChannelsList",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Features/BogusApp-Features-ChannelsList",
+        "state": {
+          "branch": "master",
+          "revision": "2c69063e641200a7075b98804a295f0e8aed5dbe",
+          "version": null
+        }
+      },
+      {
+        "package": "BogusApp-Features-PlansList",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Features/BogusApp-Features-PlansList",
+        "state": {
+          "branch": "master",
+          "revision": "5e79f986d8a637002eeff96aa08d8f9cadcaac4f",
+          "version": null
+        }
+      },
+      {
+        "package": "BogusApp-Features-TargetsList",
+        "repositoryURL": "/Users/mariusjcb/Developer/BogusApp/Features/BogusApp-Features-TargetsList",
+        "state": {
+          "branch": "master",
+          "revision": "b452233089524a6a233b06baa4d56cd6fd1e44db",
+          "version": null
+        }
+      },
+      {
+        "package": "Commandant",
+        "repositoryURL": "https://github.com/Carthage/Commandant.git",
+        "state": {
+          "branch": null,
+          "revision": "ab68611013dec67413628ac87c1f29e8427bc8e4",
+          "version": "0.17.0"
+        }
+      },
+      {
+        "package": "Komondor",
+        "repositoryURL": "https://github.com/orta/Komondor",
+        "state": {
+          "branch": null,
+          "revision": "855c74f395a4dc9e02828f58d931be6920bcbf6f",
+          "version": "1.0.6"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "7a46a5fc86cb917f69e3daf79fcb045283d8f008",
+          "version": "8.1.2"
+        }
+      },
+      {
+        "package": "PackageConfig",
+        "repositoryURL": "https://github.com/shibapm/PackageConfig.git",
+        "state": {
+          "branch": null,
+          "revision": "bf90dc69fa0792894b08a0b74cf34029694ae486",
+          "version": "0.13.0"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "09b3becb37cb2163919a3842a4c5fa6ec7130792",
+          "version": "2.2.1"
+        }
+      },
+      {
+        "package": "ShellOut",
+        "repositoryURL": "https://github.com/JohnSundell/ShellOut.git",
+        "state": {
+          "branch": null,
+          "revision": "e1577acf2b6e90086d01a6d5e2b8efdaae033568",
+          "version": "2.3.0"
+        }
+      },
+      {
+        "package": "SourceKitten",
+        "repositoryURL": "https://github.com/jpsim/SourceKitten.git",
+        "state": {
+          "branch": null,
+          "revision": "c0f960f72fa1e6151695074ffa696e4da6c45ce8",
+          "version": "0.30.1"
+        }
+      },
+      {
+        "package": "SwiftLint",
+        "repositoryURL": "https://github.com/Realm/SwiftLint",
+        "state": {
+          "branch": null,
+          "revision": "d53fc2664df92ef322bfa9ce5238d34f1461526a",
+          "version": "0.42.0"
+        }
+      },
+      {
+        "package": "SwiftyTextTable",
+        "repositoryURL": "https://github.com/scottrhoyt/SwiftyTextTable.git",
+        "state": {
+          "branch": null,
+          "revision": "c6df6cf533d120716bff38f8ff9885e1ce2a4ac3",
+          "version": "0.9.0"
+        }
+      },
+      {
+        "package": "SWXMLHash",
+        "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
+        "state": {
+          "branch": null,
+          "revision": "a4931e5c3bafbedeb1601d3bb76bbe835c6d475a",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "Yams",
+        "repositoryURL": "https://github.com/jpsim/Yams.git",
+        "state": {
+          "branch": null,
+          "revision": "9003d51672e516cc59297b7e96bff1dfdedcb4ea",
+          "version": "4.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
